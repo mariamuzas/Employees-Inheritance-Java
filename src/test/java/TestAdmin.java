@@ -40,4 +40,10 @@ public class TestAdmin {
         assertEquals(200, databaseAdmin.payBonus(), 0.01);
     }
 
+    @Test
+    public void canUpdateName() {
+        databaseAdmin.setName("John");
+        assertEquals("John", databaseAdmin.getName());
+    }
+
 }
