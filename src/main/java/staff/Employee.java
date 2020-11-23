@@ -33,10 +33,9 @@ public abstract class Employee {
     }
 
     public void setName(String name) {
-        if(name == null ) {
-            throw new NullPointerException("Name can't be null");
+        if(name != null ) {
+            this.name = name;
         }
-        this.name = name;
     }
 
     public double payBonus() {

@@ -46,4 +46,10 @@ public class TestAdmin {
         assertEquals("John", databaseAdmin.getName());
     }
 
+    @Test
+    public void cannotEnterNullForName() {
+        databaseAdmin.setName(null);
+        assertEquals("Patricia", databaseAdmin.getName());
+    }
+
 }
