@@ -24,8 +24,12 @@ public abstract class Employee {
         return salary;
     }
 
-    public void raiseSalary(double raise) {
-        this.salary += raise;
+    public void raiseSalary(double raise) throws IllegalArgumentException {
+        if (raise < 0) {
+            throw new IllegalArgumentException("Please enter a number greater than zero");
+        } else {
+            this.salary += raise;
+        }
     }
 
     public double payBonus() {
