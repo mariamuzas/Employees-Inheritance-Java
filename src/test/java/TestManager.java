@@ -41,5 +41,4 @@ public class TestManager {
     public void canPayBonus(){
         assertEquals(250, manager.payBonus(), 0.01);
     }
-
 }
